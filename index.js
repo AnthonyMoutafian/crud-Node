@@ -206,6 +206,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, (err) => {
-  if (err) console.log(err);
-  else console.log(`Server Is Running On Port ${PORT}`);
+  err ? console.log(err) : console.log(`Server Is Running On Port ${PORT}`);
 });
